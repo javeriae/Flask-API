@@ -15,7 +15,7 @@ def get_database_url():
     db_host = os.environ.get('DB_HOST')
     db_password = os.environ.get('DB_PASSWORD')
     db_user = os.environ.get('DB_USER')
-    return f"postgresql://{db_user}:{db_password}@{db_host}/{db_name}"
+    return f'postgresql://{db_user}:{db_password}@{db_host}/{db_name}'
 
 
 def init_app():
